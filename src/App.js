@@ -1,6 +1,10 @@
+import AboutUs from "./pages/AboutUs";
+
 function App() {
   return (
-    <div></div>
+    <div>
+      <AboutUs />      
+    </div>
   );
 }
 
