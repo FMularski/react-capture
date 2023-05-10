@@ -2,10 +2,13 @@ import styled from 'styled-components';
 import {About} from '../styles';
 import Toggle from './Toggle';
 import { LayoutGroup } from 'framer-motion';
+import { useScroll } from './useScroll';
+import { fade } from '../animation';
 
 const FaqSection = () => {
+    const [element, controls] = useScroll();
     return (
-        <Faq>
+        <Faq variants={fade} ref={element} animate={controls} initial="hidden">
             <h2>Any Questions? <span>FAQ</span></h2>
             <LayoutGroup>
                 <Toggle title="Where Do I start?">
@@ -39,6 +42,7 @@ const FaqSection = () => {
 
 const Faq = styled(About)`
     display: block;
+    overflow-x: hidden;
     
     span {
         display: block;
