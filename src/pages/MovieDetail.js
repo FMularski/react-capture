@@ -4,6 +4,7 @@ import { MovieState } from '../movieState';
 import { useEffect, useState } from 'react';
 import { motion } from "framer-motion";
 import {pageAnimation} from "../animation";
+import ScrollTop from '../components/ScrollTop';
 
 const MovieDetail = () => {
     const location = useLocation();
@@ -31,6 +32,7 @@ const MovieDetail = () => {
                 <ImageDisplay>
                     <img src={movie.secondaryImg} alt={movie.title} />
                 </ImageDisplay>
+                <ScrollTop />
             </Details>
     )
 };

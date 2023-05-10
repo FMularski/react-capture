@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 const Nav = () => {
     return (
         <StyledNav>
-            <h1><a href="#">Capture</a></h1>
+            <h1><a href="/">Capture</a></h1>
             <ul>
                 <li><Link to="/">About us</Link></li>
                 <li><Link to="/our-work">Our work</Link></li>
@@ -22,6 +22,9 @@ const StyledNav = styled.nav`
     align-items: center;
     padding: 1rem 10rem;
     background: #282828;
+    position: sticky;
+    top: 0;
+    z-index: 2;
 
     h1 {
         a {

@@ -6,6 +6,7 @@ import {Link} from 'react-router-dom';
 import { motion } from "framer-motion";
 import { pageAnimation, fade, photoAnimation, lineAnimation, slider, sliderContainer } from "../animation";
 import { useScroll } from '../components/useScroll';
+import ScrollTop from '../components/ScrollTop';
 
 const OurWork = () => {
     const [element, controls] = useScroll();
@@ -47,6 +48,7 @@ const OurWork = () => {
                     <img src={goodtimes} alt="good times" />
                 </Link>
             </Movie>
+            <ScrollTop/>
         </Work>
     )
 }
