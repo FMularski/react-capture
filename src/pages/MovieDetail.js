@@ -47,6 +47,14 @@ const HeadLine = styled.div`
     padding-top: 20vh;
     position: relative;
 
+    @media (max-width: 1500px) {
+        h2 {
+            width: 100%;
+            text-align: center;
+            font-size: 2rem;
+        }
+    }
+
     h2 {
         position: absolute;
         top: 20%;
@@ -68,6 +76,12 @@ const Awards = styled.div`
     margin: 5rem 10rem;
     align-items: center;
     justify-content: space-around;
+
+    @media (max-width: 1300px) {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
 `;
 
 
